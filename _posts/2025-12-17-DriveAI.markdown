@@ -1,0 +1,10 @@
+---
+title:  "Third Year AI"
+date:   2025-12-17 12:42:09 +0100
+categories: "Uni-Project"
+description: "This was a school project where I made an AI that would learn to drive round a track using genetic algorithms."
+image: 
+gif: 
+video-link: -MYs_buhd2w
+video-link-text: "Video"
+---

@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="post-entry">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <p class="project-name">
+            {{ post.title | escape }}
+          </p>
+        </h3>
+        <h4>
+          <p>
+            {{ post.description | escape }}
+          </p>
+          {%- if post.video-link -%}
+                <iframe width="{{post.video-width| default: 560}}" height="{{post.video-height| default: 315}}" 
+                src="https://www.youtube.com/embed/{{ post.video-link }}"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            
+          {%- endif -%}
+          {%- if post.image -%}
+          <img width="{{post.image-width| default: 560}}" height="{{post.image-height| default: 315}}" src="{{ post.image }}" class="projectImage"></img>
+          {%- endif -%}
+          {%- if post.gif -%}
+          <img width="{{post.gif-width| default: 560}}" height="{{post.gif-height| default: 315}}" src="{{ post.gif }}" class="projectGIF"></img>
+          {%- endif -%}
+        </h4>
+        
+        <h6>
+          <p>
+            {{post.categories}}
+          </p>
+        </h6>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

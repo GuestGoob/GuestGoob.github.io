@@ -1,0 +1,8 @@
+---
+title:  "Transcript.LOG"
+date:   2026-09-28 16:12:46 +0100
+categories: "Projects"
+description: "Transcript.LOG was a group project I worked on in my 3rd year of studying at Abertay"
+link: ""
+gif: ""
+---

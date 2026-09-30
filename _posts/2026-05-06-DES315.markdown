@@ -3,9 +3,9 @@ title:  "Transcript.LOG"
 date:   2026-05-06 12:42:09 +0100
 categories: "Uni-Project"
 description: "This was a group project I worked on during my third year of study at Abertay and my first time working with a client in a pseudo-professional capacity, which in this case were the lovely people at Expression Games. I worked on many parts of the underlying game systems and mechanics, but the thing I enjoyed most about this project was making all of the shaders as I think they really add to the immersion and feel of the game."
-image: /assets/images/DES315-image.png
+image: #/assets/images/DES315-image.png
 image-width: "315"
 image-height: "250"
-gif: 
+gif: /assets/gifs/Transcript.gif
 
 ---

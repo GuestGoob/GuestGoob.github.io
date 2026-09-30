@@ -25,6 +25,12 @@ layout: default
           <p>
             {{ post.description | escape }}
           </p>
+          {%- if post.link -%}
+          <p>
+            <a href="{{post.link}}">{{post.link-text}}</a>
+          </p>
+          {%- endif -%}
+
           {%- if post.video-link -%}
                 <iframe width="{{post.video-width| default: 560}}" height="{{post.video-height| default: 315}}" 
                 src="https://www.youtube.com/embed/{{ post.video-link }}"
